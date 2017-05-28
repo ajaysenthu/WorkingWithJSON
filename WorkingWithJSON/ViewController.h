@@ -11,5 +11,18 @@
 @interface ViewController : UIViewController
 
 
+@property NSURLSession *URLSession;
+
+@property NSMutableURLRequest *URLRequest;
+
+@property NSURLSessionDataTask *dataTask;
+
+@property NSDictionary *response;
+
+
+
+- (IBAction)onTapGetTopApps:(id)sender;
+
+
 @end
 
