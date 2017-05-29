@@ -22,9 +22,9 @@
     self.URLSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     
     
-    self.URLRequest = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"https://itunes.apple.com/us/rss/topfreeapplications/limit=100/json"]];
+    self.URLRequest = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"https://itunes.apple.com/ch/rss/topfreeapplications/limit=100/json?l=en"]];
     
-    self.URLRequest.HTTPMethod = @"GET";
+    self.URLRequest.HTTPMethod = @"POST";
     
     self.dataTask = [self.URLSession dataTaskWithRequest:_URLRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
