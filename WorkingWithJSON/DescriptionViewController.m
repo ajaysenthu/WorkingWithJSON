@@ -23,6 +23,8 @@
     self.appImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", _sample1]]]];
     
     [_descriptionLabel sizeToFit];
+    
+    NSLog(@"ds");
 }
 
 - (void)didReceiveMemoryWarning {
